@@ -5,6 +5,8 @@
 #include "iostream"
 #include "SpriteComponent.h"
 #include "Ball.h"
+#include "Texture.h"
+#include "Math.h"
 
 GameWorld::GameWorld(Engine* engine):
 	mSpriteShader(nullptr), mSpriteVerts(nullptr), mEngine(engine)
@@ -95,9 +97,16 @@ void GameWorld::GenerateOutput()
 	glClear(GL_COLOR_BUFFER_BIT);
 
 
-	// Set shader/vao as active
+	// Set shader/Vao as active
 	mSpriteShader->SetActive();
 	mSpriteVerts->SetActive();
+
+	//Alpha
+	glEnable(GL_BLEND);
+	glBlendFunc(
+		GL_SRC_ALPHA,     //srcFactor is srcAlpha
+		GL_ONE_MINUS_SRC_ALPHA  //dstFactor is 1 - srcAlpha
+	);
 
 
 	// Draw Actors
@@ -155,7 +164,30 @@ void GameWorld::RemoveActor(Actor* actor)
 	}
 }
 
+//Get the texture
+Texture* GameWorld::GetTexture(string fileName)
+{
+	Texture* tex;
+	auto iter = mTextures.find(fileName);
+	if (iter != mTextures.end()) {
+		tex = iter->second;
+	}
+	else {
 
+		//If have not been Create
+		tex = new Texture();
+		if (tex->Load(fileName)) {
+			mTextures.emplace(fileName, tex);
+		}
+		else {
+			//Error Read
+			delete tex;
+			tex = nullptr;
+		}
+
+	}
+	return tex;
+}
 
 void GameWorld::AddSprite(SpriteComponent* sprite)
 {
@@ -171,7 +203,7 @@ void GameWorld::AddSprite(SpriteComponent* sprite)
 
 
 
-
+//
 void GameWorld::RemoveSprite(SpriteComponent* sprite)
 {
 	//Find the Sprite
@@ -181,15 +213,14 @@ void GameWorld::RemoveSprite(SpriteComponent* sprite)
 }
 
 
-
 //Only For Test
 void GameWorld::CreateSpriteVerts()
 {
 	float vertices[] = {
-		0.5f, 0.5f, 0.0f,   // 右上角
-		0.5f, -0.5f, 0.0f,  // 右下角
-		-0.5f, -0.5f, 0.0f, // 左下角
-		-0.5f, 0.5f, 0.0f   // 左上角
+		0.5f, 0.5f,   0.0f,0.0f ,0.0f,  // 右上角
+		0.5f, -0.5f,  0.0f,1.0f ,0.0f,// 右下角
+		-0.5f, -0.5f, 0.0f,1.0f ,1.0f, // 左下角
+		-0.5f, 0.5f,  0.0f,0.0f ,1.0f   // 左上角
 	};
 
 	unsigned int indices[] = { // 注意索引从0开始! 
@@ -197,6 +228,7 @@ void GameWorld::CreateSpriteVerts()
 		1, 2, 3  // 第二个三角形
 	};
 
+	//Make Sprite Vertex
 	mSpriteVerts = new VertexArray(vertices, 4, indices, 6);
 	//cout << sizeof(mSpriteVerts) << endl;
 }
@@ -206,7 +238,7 @@ void GameWorld::CreateSpriteVerts()
 void GameWorld::LoadData()
 {
 	// Create Ball
-	const int numBalls = 20;
+	const int numBalls = 10;
 	for (int i = 0; i < numBalls; i++)
 	{
 		new Ball(this);
@@ -233,7 +265,7 @@ bool GameWorld::LoadShaders()
 
 	//Load Sprite Shader
 	mSpriteShader = new Shader();
-	if (!mSpriteShader->Load("./Transform.vert", "./Basic.frag")) {
+	if (!mSpriteShader->Load("./Sprite.vert", "./Sprite.frag")) {
 		return false;
 	}
 	

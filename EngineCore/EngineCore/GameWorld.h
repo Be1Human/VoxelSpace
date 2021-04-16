@@ -3,6 +3,7 @@
 #include "Actor.h"
 #include <glad/glad.h>
 #include "Ball.h"
+#include <unordered_map>
 
 using namespace std;
 
@@ -31,6 +32,8 @@ public:
 	void AddActor(class Actor* actor);
 	void RemoveActor(class Actor* actor);
 
+	//Get Texture
+	class Texture* GetTexture(string fileName);
 
 	//Sprite(Visualize Actor)
 	void AddSprite(class SpriteComponent* sprite);
@@ -52,6 +55,10 @@ private:
 
 	//LoadShaders
 	bool LoadShaders();
+
+	//Texture
+	unordered_map<string, class Texture*> mTextures;
+
 
 	//Generate Visual Graphics
 	void GenerateOutput();

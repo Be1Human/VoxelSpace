@@ -9,8 +9,6 @@ Component(owner,updateOrder)
 
 {
 
-
-
 }
 
 void MoveComponent::Update(float deltaTime)

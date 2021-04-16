@@ -1,8 +1,5 @@
-﻿  Actor.cpp
-  Ball.cpp
-  Engine.cpp
-D:\VoxelSpace\VoxelSpace\EngineCore\EngineCore\Engine.cpp(141,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  GameWorld.cpp
-  SpriteComponent.cpp
+﻿  Ball.cpp
+  Littleboy.cpp
   Generating Code...
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
   EngineCore.vcxproj -> D:\VoxelSpace\VoxelSpace\EngineCore\x64\Debug\EngineCore.exe

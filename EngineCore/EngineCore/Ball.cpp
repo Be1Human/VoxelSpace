@@ -15,11 +15,12 @@ Ball::Ball(GameWorld* gameWorld):
 
 	// Create a sprite component
 	SpriteComponent* sc = new SpriteComponent(this);
+	sc->SetTexture(gameWorld->GetTexture("Assets/Blue_Front1.png"));
 
 	// Create a move Component
 	MoveComponent* mc = new MoveComponent(this);
 	mc->SetForwardSpeed(150.f);
-	mc->SetAngularSpeed(2.f);
+	mc->SetAngularSpeed(1.f);
 
 	// Add to mAsteroids in game
 	gameWorld->AddBall(this);
