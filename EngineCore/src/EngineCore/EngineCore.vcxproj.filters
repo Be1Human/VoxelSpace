@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\GLAD">
+      <UniqueIdentifier>{ef2b9d13-ec92-49fb-8c7e-e073c497fb82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Test">
+      <UniqueIdentifier>{01e5b24c-7e17-42f2-af8b-22d082653ecd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine_Core">
+      <UniqueIdentifier>{19a08231-11bb-44b9-a445-bc6ead687b2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine_Core\Object_Core">
+      <UniqueIdentifier>{0fd03d40-0a76-4154-926e-5addec9d1fc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Shaders">
+      <UniqueIdentifier>{dc26af39-afbf-4996-a0dd-4f7bfcf3da4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine_Core\Math">
+      <UniqueIdentifier>{2ab4fdb3-e009-40ec-a861-139a5899f610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine_Core\VoxEdit">
+      <UniqueIdentifier>{13cc2fc1-106e-4188-b042-2a88144a1efb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine_Core\Object_Core\CustomComponent">
+      <UniqueIdentifier>{1fd2218f-2015-418f-953b-cf6aba9efc38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine_Core\Engine_Core">
+      <UniqueIdentifier>{15a12a7b-e96d-46c4-9cc3-50d99773ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{2d2aff16-6d40-4f22-88e3-5abb9cc5270e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Game_Object">
+      <UniqueIdentifier>{0a3ac316-aa95-4690-a1d8-bfbc633c9d04}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Test\game1.c">
+      <Filter>Source Files\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Actor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\AnimSpriteComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\Component.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\MoveComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\SpriteComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\stb_iamge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\VertexArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Project\Ball.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Project\GameLevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Project\GameWorld.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game_Project\Littleboy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Math.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Random.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\test_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GLAD\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Module\stb_image.h">
+      <Filter>Source Files\Engine_Core\Engine_Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Test\game1.h">
+      <Filter>Source Files\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Actor.h" />
+    <ClInclude Include="Core\Engine.h" />
+    <ClInclude Include="Component\AnimSpriteComponent.h" />
+    <ClInclude Include="Component\Component.h" />
+    <ClInclude Include="Component\MoveComponent.h" />
+    <ClInclude Include="Component\SpriteComponent.h" />
+    <ClInclude Include="Core\Shader.h" />
+    <ClInclude Include="Core\Texture.h" />
+    <ClInclude Include="Core\VertexArray.h" />
+    <ClInclude Include="Game_Project\Ball.h" />
+    <ClInclude Include="Game_Project\GameLevel.h" />
+    <ClInclude Include="Game_Project\GameWorld.h" />
+    <ClInclude Include="Game_Project\Littleboy.h" />
+    <ClInclude Include="Math\Math.h" />
+    <ClInclude Include="Math\Random.h" />
+    <ClInclude Include="Test\test_draw.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Basic.frag" />
+    <None Include="Shaders\Basic.vert" />
+    <None Include="Shaders\Transform.vert" />
+    <None Include="Shaders\Sprite.frag" />
+    <None Include="Shaders\Sprite.vert" />
+  </ItemGroup>
+</Project>
