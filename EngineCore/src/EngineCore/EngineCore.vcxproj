@@ -81,7 +81,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\VoxelSpace\VoxelSpace\EngineCore\src\EngineCore;D:\VoxelSpace\VoxelSpace\EngineCore\lib;D:\VoxelSpace\VoxelSpace\EngineCore\src;D:\VoxelSpace\VoxelSpace\EngineCore\src\GLAD;D:\VoxelSpace\VoxelSpace\EngineCore;D:\VoxelSpace\VoxelSpace\EngineCore\include;$(IncludePath)</IncludePath>
+    <IncludePath>..\..\include;..\EngineCore;..\..\lib;..\..\src\EngineCore;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -127,12 +127,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\VoxelSpace\VoxelSpace\EngineCore\include;D:\VoxelSpace\test_module\EngineCore\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\src\EngineCore;..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\VoxelSpace\VoxelSpace\EngineCore\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>

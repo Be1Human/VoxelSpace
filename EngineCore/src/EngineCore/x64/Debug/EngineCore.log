@@ -1,3 +1,2 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (EngineCore.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Littleboy.cpp
-  EngineCore.vcxproj -> D:\VoxelSpace\VoxelSpace\EngineCore\x64\Debug\Engine.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(EngineCore.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  EngineCore.vcxproj -> C:\Github\VoxelSpace\EngineCore\x64\Debug\Engine.exe

@@ -103,6 +103,12 @@
     <ClCompile Include="GLAD\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Component\2dCapsuleComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\InputComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Module\stb_image.h">
@@ -127,6 +133,8 @@
     <ClInclude Include="Math\Math.h" />
     <ClInclude Include="Math\Random.h" />
     <ClInclude Include="Test\test_draw.h" />
+    <ClInclude Include="Component\2dCapsuleComponent.h" />
+    <ClInclude Include="Component\InputComponent.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\Basic.frag" />
