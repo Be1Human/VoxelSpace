@@ -164,6 +164,7 @@
     <ClCompile Include="Component\SpriteComponent.cpp" />
     <ClCompile Include="Core\Actor.cpp" />
     <ClCompile Include="Core\Engine.cpp" />
+    <ClCompile Include="Core\GameWorldBase.cpp" />
     <ClCompile Include="Core\Main.cpp" />
     <ClCompile Include="Core\Shader.cpp" />
     <ClCompile Include="Core\Source.cpp" />
@@ -189,6 +190,7 @@
     <ClInclude Include="Component\SpriteComponent.h" />
     <ClInclude Include="Core\Actor.h" />
     <ClInclude Include="Core\Engine.h" />
+    <ClInclude Include="Core\GameWorldBase.h" />
     <ClInclude Include="Core\Shader.h" />
     <ClInclude Include="Core\Texture.h" />
     <ClInclude Include="Core\VertexArray.h" />
@@ -203,6 +205,7 @@
     <ClInclude Include="Test\test_draw.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Engine.aps" />
     <None Include="Shaders\Sprite.frag" />
     <None Include="Shaders\Sprite.vert" />
     <None Include="Shaders\Basic.frag" />

@@ -51,17 +51,17 @@ public:
 private:
 
 	//Process Game Input
-	void ProcessInput();
+	virtual void ProcessInput();
 
 	//LoadShaders
-	bool LoadShaders();
+	virtual bool LoadShaders();
 
 	//Texture
 	unordered_map<string, class Texture*> mTextures;
 
 
 	//Generate Visual Graphics
-	void GenerateOutput();
+	virtual void GenerateOutput();
 
 	void CreateSpriteVerts();
 

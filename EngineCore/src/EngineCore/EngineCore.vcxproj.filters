@@ -109,6 +109,9 @@
     <ClCompile Include="Component\InputComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Core\GameWorldBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Module\stb_image.h">
@@ -135,6 +138,7 @@
     <ClInclude Include="Test\test_draw.h" />
     <ClInclude Include="Component\2dCapsuleComponent.h" />
     <ClInclude Include="Component\InputComponent.h" />
+    <ClInclude Include="Core\GameWorldBase.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\Basic.frag" />
@@ -142,5 +146,6 @@
     <None Include="Shaders\Transform.vert" />
     <None Include="Shaders\Sprite.frag" />
     <None Include="Shaders\Sprite.vert" />
+    <None Include="Engine.aps" />
   </ItemGroup>
 </Project>

@@ -47,7 +47,7 @@ bool GameWorld::Initialize(GLFWwindow* Window)
 
 void GameWorld::RunLoop(float deltaTime)
 {
-	ProcessInput();
+	ProcessInput();   
 	UpdateGameWorld(deltaTime);
 	GenerateOutput();
 }
@@ -96,6 +96,8 @@ void GameWorld::UpdateGameWorld(float deltaTime)
 }
 
 
+
+//Draw  Actor
 void GameWorld::GenerateOutput()
 {
 	//Clear Last Output
@@ -130,7 +132,6 @@ void GameWorld::GenerateOutput()
 	//	GL_UNSIGNED_INT,
 	//	nullptr
 	//);
-
 }
 
 
@@ -249,14 +250,11 @@ void GameWorld::LoadData()
 		//new Ball(this);
 	}
 
-
-
 	//Create LittleBoy
 	mLittleBoy = new Littleboy(this);
 	mLittleBoy->SetPosition(Vector2(100.0f, 100.0f));
 	mLittleBoy->SetRotation(pi / 2);
 	mLittleBoy->SetScale(0.7f);
-
 }
 
 void GameWorld::UnloadData()

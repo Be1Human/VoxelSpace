@@ -2,7 +2,7 @@
 #include "Engine.h"
 #include "Shader.h"
 #include "VertexArray.h"
-#include "Game_Project/GameWorld.h"
+
 
 //Construct Function
 Engine::Engine()
@@ -127,7 +127,7 @@ void Engine::UpdateEngine()
 	mTicksCount = glfwGetTime();
 
 
-	//TODO:
+	//TODO:Game Run
 
 	//Start or End Game
 	if (mIsStartGameWorld) {
