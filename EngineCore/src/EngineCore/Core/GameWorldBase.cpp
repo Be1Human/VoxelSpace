@@ -32,7 +32,6 @@ bool GameWorldBase::Initialize(GLFWwindow* Window)
 	//Create Sprite Data
 
 	//Load Data
-
 	return true;
 
 }

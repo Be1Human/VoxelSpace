@@ -78,8 +78,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Github\VoxelSpace\LittleTestGameV1;$(IncludePath)</IncludePath>
-    <ExternalIncludePath>C:\Github\VoxelSpace\EngineCore\src\EngineCore;$(ExternalIncludePath)</ExternalIncludePath>
+    <IncludePath>C:\Project\VoxelSpace\LittleTestGameV1;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>C:\Project\VoxelSpace\EngineCore\src\EngineCore;$(ExternalIncludePath)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -122,7 +122,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Github\VoxelSpace\EngineCore\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Project\VoxelSpace\EngineCore\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
